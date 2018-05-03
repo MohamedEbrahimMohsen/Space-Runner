@@ -9,6 +9,15 @@
 import SpriteKit
 
 class GroundClass: SKSpriteNode{
+    
+    func initializeGroundOrFloor(){
+        name = "Ground"
+        physicsBody = SKPhysicsBody(rectangleOf: self.size)
+        //physicsBody?.isDynamic = false
+        physicsBody?.affectedByGravity = false
+        physicsBody?.categoryBitMask = ColliderType.GROUND
+    }
+    
     func moveGroundsOrFloor(using camera: SKCameraNode){
         if self.position.x + self.size.width < camera.position.x{
             self.position.x += self.size.width * 3

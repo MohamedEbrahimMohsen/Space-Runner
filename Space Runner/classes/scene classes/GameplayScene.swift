@@ -10,7 +10,7 @@ import SpriteKit
 
 class GameplayScene: SKScene{
     private(set) var mainCamera: SKCameraNode?
-    private(set) var level: Level = .levelSix
+    static var level: Level = .levelSix
  
     private(set) var bg1: BGClass?
     private(set) var bg2: BGClass?
@@ -24,11 +24,13 @@ class GameplayScene: SKScene{
     private(set) var floor2: GroundClass?
     private(set) var floor3: GroundClass?
 
+    private(set) var player: Player?
     
     override func didMove(to view: SKView) {
         initializeGame()
     }
     
+    //MARK: Initialzation
     func initializeGame(){
         mainCamera = childNode(withName: "MainCamera") as? SKCameraNode
         
@@ -36,18 +38,30 @@ class GameplayScene: SKScene{
         bg2 = childNode(withName: "BG2") as? BGClass
         bg3 = childNode(withName: "BG3") as? BGClass
 
+        
         ground1 = childNode(withName: "Ground1") as? GroundClass
         ground2 = childNode(withName: "Ground2") as? GroundClass
         ground3 = childNode(withName: "Ground3") as? GroundClass
+        ground1?.initializeGroundOrFloor()
+        ground2?.initializeGroundOrFloor()
+        ground3?.initializeGroundOrFloor()
 
         
         floor1 = childNode(withName: "Floor1") as? GroundClass
         floor2 = childNode(withName: "Floor2") as? GroundClass
         floor3 = childNode(withName: "Floor3") as? GroundClass
+        floor1?.initializeGroundOrFloor()
+        floor2?.initializeGroundOrFloor()
+        floor3?.initializeGroundOrFloor()
+
+        
+        player = childNode(withName: "Player") as? Player
+        player?.initializePlayer()
     }
     
+    //MARK: Updating
     func updateCamera(){
-        mainCamera?.position.x += Constants.gameSpeed[level]!
+        mainCamera?.position.x += Utlities.gameSpeed[GameplayScene.level]!
     }
     
     func updateBGs(){
@@ -66,21 +80,55 @@ class GameplayScene: SKScene{
         floor3?.moveGroundsOrFloor(using: mainCamera!)
     }
     
+    func updatePlayer(){
+        player?.run()
+    }
     override func update(_ currentTime: TimeInterval) {
         updateCamera()
         updateBGs()
         updateGroundsAndFloors()
-    }
-    enum Level: Int{
-        case levelOne
-        case levelTwo
-        case levelThree
-        case levelFour
-        case levelFive
-        case levelSix
+        updatePlayer()
     }
     
-    struct Constants{
-    static let gameSpeed: [Level:CGFloat] = [.levelOne: 10.0, .levelTwo: 15.0, .levelThree: 20.0,.levelFour: 25.0, .levelFive: 30.0,.levelSix: 50.0]
+    //MARK: Gravity
+    func reverseGravity(){
+        physicsWorld.gravity.dy *= -1
+        player?.reverse()
+    }
+    
+    //MARK: Interactions
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        reverseGravity()
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
