@@ -8,26 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		CDABBEFE209A9EA6006DCF1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABBEFD209A9EA6006DCF1D /* AppDelegate.swift */; };
-		CDABBF00209A9EA6006DCF1D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CDABBEFF209A9EA6006DCF1D /* GameScene.sks */; };
-		CDABBF02209A9EA6006DCF1D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CDABBF01209A9EA6006DCF1D /* Actions.sks */; };
-		CDABBF04209A9EA6006DCF1D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABBF03209A9EA6006DCF1D /* GameScene.swift */; };
 		CDABBF06209A9EA6006DCF1D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABBF05209A9EA6006DCF1D /* GameViewController.swift */; };
 		CDABBF09209A9EA6006DCF1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDABBF07209A9EA6006DCF1D /* Main.storyboard */; };
 		CDABBF0B209A9EA8006DCF1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDABBF0A209A9EA8006DCF1D /* Assets.xcassets */; };
 		CDABBF0E209A9EA8006DCF1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDABBF0C209A9EA8006DCF1D /* LaunchScreen.storyboard */; };
+		CDABBF1C209AA1C8006DCF1D /* run1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDABBF16209AA1C8006DCF1D /* run1.png */; };
+		CDABBF1D209AA1C8006DCF1D /* run2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDABBF17209AA1C8006DCF1D /* run2.png */; };
+		CDABBF1E209AA1C8006DCF1D /* run0.png in Resources */ = {isa = PBXBuildFile; fileRef = CDABBF18209AA1C8006DCF1D /* run0.png */; };
+		CDABBF1F209AA1C8006DCF1D /* run4.png in Resources */ = {isa = PBXBuildFile; fileRef = CDABBF19209AA1C8006DCF1D /* run4.png */; };
+		CDABBF20209AA1C8006DCF1D /* run5.png in Resources */ = {isa = PBXBuildFile; fileRef = CDABBF1A209AA1C8006DCF1D /* run5.png */; };
+		CDABBF21209AA1C8006DCF1D /* run3.png in Resources */ = {isa = PBXBuildFile; fileRef = CDABBF1B209AA1C8006DCF1D /* run3.png */; };
+		CDABBF26209AA212006DCF1D /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CDABBF25209AA212006DCF1D /* GameplayScene.sks */; };
+		CDABBF28209AA272006DCF1D /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABBF27209AA272006DCF1D /* GameplayScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CDABBEFA209A9EA6006DCF1D /* Space Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Runner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDABBEFD209A9EA6006DCF1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDABBEFF209A9EA6006DCF1D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		CDABBF01209A9EA6006DCF1D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		CDABBF03209A9EA6006DCF1D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CDABBF05209A9EA6006DCF1D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CDABBF08209A9EA6006DCF1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDABBF0A209A9EA8006DCF1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDABBF0D209A9EA8006DCF1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDABBF0F209A9EA8006DCF1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDABBF16209AA1C8006DCF1D /* run1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run1.png; sourceTree = "<group>"; };
+		CDABBF17209AA1C8006DCF1D /* run2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run2.png; sourceTree = "<group>"; };
+		CDABBF18209AA1C8006DCF1D /* run0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run0.png; sourceTree = "<group>"; };
+		CDABBF19209AA1C8006DCF1D /* run4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run4.png; sourceTree = "<group>"; };
+		CDABBF1A209AA1C8006DCF1D /* run5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run5.png; sourceTree = "<group>"; };
+		CDABBF1B209AA1C8006DCF1D /* run3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run3.png; sourceTree = "<group>"; };
+		CDABBF25209AA212006DCF1D /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
+		CDABBF27209AA272006DCF1D /* GameplayScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +70,54 @@
 		CDABBEFC209A9EA6006DCF1D /* Space Runner */ = {
 			isa = PBXGroup;
 			children = (
+				CDABBF24209AA1F5006DCF1D /* controllers */,
+				CDABBF23209AA1EE006DCF1D /* classes */,
+				CDABBF22209AA1E4006DCF1D /* scenes */,
+				CDABBF15209AA0FF006DCF1D /* player */,
 				CDABBEFD209A9EA6006DCF1D /* AppDelegate.swift */,
-				CDABBEFF209A9EA6006DCF1D /* GameScene.sks */,
-				CDABBF01209A9EA6006DCF1D /* Actions.sks */,
-				CDABBF03209A9EA6006DCF1D /* GameScene.swift */,
-				CDABBF05209A9EA6006DCF1D /* GameViewController.swift */,
 				CDABBF07209A9EA6006DCF1D /* Main.storyboard */,
 				CDABBF0A209A9EA8006DCF1D /* Assets.xcassets */,
 				CDABBF0C209A9EA8006DCF1D /* LaunchScreen.storyboard */,
 				CDABBF0F209A9EA8006DCF1D /* Info.plist */,
 			);
 			path = "Space Runner";
+			sourceTree = "<group>";
+		};
+		CDABBF15209AA0FF006DCF1D /* player */ = {
+			isa = PBXGroup;
+			children = (
+				CDABBF18209AA1C8006DCF1D /* run0.png */,
+				CDABBF16209AA1C8006DCF1D /* run1.png */,
+				CDABBF17209AA1C8006DCF1D /* run2.png */,
+				CDABBF1B209AA1C8006DCF1D /* run3.png */,
+				CDABBF19209AA1C8006DCF1D /* run4.png */,
+				CDABBF1A209AA1C8006DCF1D /* run5.png */,
+			);
+			path = player;
+			sourceTree = "<group>";
+		};
+		CDABBF22209AA1E4006DCF1D /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CDABBF25209AA212006DCF1D /* GameplayScene.sks */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
+		CDABBF23209AA1EE006DCF1D /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				CDABBF27209AA272006DCF1D /* GameplayScene.swift */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		CDABBF24209AA1F5006DCF1D /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CDABBF05209A9EA6006DCF1D /* GameViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,10 +179,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDABBF09209A9EA6006DCF1D /* Main.storyboard in Resources */,
-				CDABBF00209A9EA6006DCF1D /* GameScene.sks in Resources */,
+				CDABBF21209AA1C8006DCF1D /* run3.png in Resources */,
+				CDABBF1C209AA1C8006DCF1D /* run1.png in Resources */,
+				CDABBF20209AA1C8006DCF1D /* run5.png in Resources */,
+				CDABBF26209AA212006DCF1D /* GameplayScene.sks in Resources */,
+				CDABBF1D209AA1C8006DCF1D /* run2.png in Resources */,
 				CDABBF0B209A9EA8006DCF1D /* Assets.xcassets in Resources */,
+				CDABBF1F209AA1C8006DCF1D /* run4.png in Resources */,
 				CDABBF0E209A9EA8006DCF1D /* LaunchScreen.storyboard in Resources */,
-				CDABBF02209A9EA6006DCF1D /* Actions.sks in Resources */,
+				CDABBF1E209AA1C8006DCF1D /* run0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,8 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDABBF04209A9EA6006DCF1D /* GameScene.swift in Sources */,
 				CDABBF06209A9EA6006DCF1D /* GameViewController.swift in Sources */,
+				CDABBF28209AA272006DCF1D /* GameplayScene.swift in Sources */,
 				CDABBEFE209A9EA6006DCF1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
