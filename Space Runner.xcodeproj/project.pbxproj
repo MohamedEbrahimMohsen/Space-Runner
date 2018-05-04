@@ -13,6 +13,8 @@
 		CDA030D0209B4EA400FEC245 /* player 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA030CA209B4EA400FEC245 /* player 1.png */; };
 		CDA030D1209B4EA400FEC245 /* player 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA030CB209B4EA400FEC245 /* player 4.png */; };
 		CDA030D2209B4EA400FEC245 /* player 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA030CC209B4EA400FEC245 /* player 2.png */; };
+		CDA030D4209B5EAA00FEC245 /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA030D3209B5EAA00FEC245 /* ItemController.swift */; };
+		CDA030D6209B791C00FEC245 /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDA030D5209B791C00FEC245 /* bgMusic.mp3 */; };
 		CDABBEFE209A9EA6006DCF1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABBEFD209A9EA6006DCF1D /* AppDelegate.swift */; };
 		CDABBF06209A9EA6006DCF1D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABBF05209A9EA6006DCF1D /* GameViewController.swift */; };
 		CDABBF09209A9EA6006DCF1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDABBF07209A9EA6006DCF1D /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		CDA030CA209B4EA400FEC245 /* player 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player 1.png"; sourceTree = "<group>"; };
 		CDA030CB209B4EA400FEC245 /* player 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player 4.png"; sourceTree = "<group>"; };
 		CDA030CC209B4EA400FEC245 /* player 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player 2.png"; sourceTree = "<group>"; };
+		CDA030D3209B5EAA00FEC245 /* ItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
+		CDA030D5209B791C00FEC245 /* bgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgMusic.mp3; sourceTree = "<group>"; };
 		CDABBEFA209A9EA6006DCF1D /* Space Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Runner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDABBEFD209A9EA6006DCF1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDABBF05209A9EA6006DCF1D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 				CDABBF30209AB08A006DCF1D /* Supporting Files */,
 				CDABBF0F209A9EA8006DCF1D /* Info.plist */,
 				CDFD7F9C209B2985007B8F13 /* Utlities.swift */,
+				CDA030D5209B791C00FEC245 /* bgMusic.mp3 */,
 			);
 			path = "Space Runner";
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				CDABBF05209A9EA6006DCF1D /* GameViewController.swift */,
+				CDA030D3209B5EAA00FEC245 /* ItemController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 				CDABBF09209A9EA6006DCF1D /* Main.storyboard in Resources */,
 				CDABBF26209AA212006DCF1D /* GameplayScene.sks in Resources */,
 				CDA030D2209B4EA400FEC245 /* player 2.png in Resources */,
+				CDA030D6209B791C00FEC245 /* bgMusic.mp3 in Resources */,
 				CDA030CD209B4EA400FEC245 /* player 5.png in Resources */,
 				CDABBF0B209A9EA8006DCF1D /* Assets.xcassets in Resources */,
 				CDABBF0E209A9EA8006DCF1D /* LaunchScreen.storyboard in Resources */,
@@ -254,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDABBF06209A9EA6006DCF1D /* GameViewController.swift in Sources */,
+				CDA030D4209B5EAA00FEC245 /* ItemController.swift in Sources */,
 				CDABBF28209AA272006DCF1D /* GameplayScene.swift in Sources */,
 				CDABBF2F209AAFD4006DCF1D /* gameplaySceneExtension.swift in Sources */,
 				CDABBEFE209A9EA6006DCF1D /* AppDelegate.swift in Sources */,

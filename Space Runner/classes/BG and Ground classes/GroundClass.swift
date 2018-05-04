@@ -13,8 +13,8 @@ class GroundClass: SKSpriteNode{
     func initializeGroundOrFloor(){
         name = "Ground"
         physicsBody = SKPhysicsBody(rectangleOf: self.size)
-        //physicsBody?.isDynamic = false
         physicsBody?.affectedByGravity = false
+        physicsBody?.isDynamic = false
         physicsBody?.categoryBitMask = ColliderType.GROUND
     }
     

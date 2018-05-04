@@ -21,7 +21,8 @@ class Player: SKSpriteNode{
         self.physicsBody?.collisionBitMask = ColliderType.GROUND
         self.physicsBody?.contactTestBitMask = ColliderType.ROCKETandCOLLECTABLES
         self.physicsBody?.affectedByGravity = true
-        //self.physicsBody?.isDynamic = false
+        self.physicsBody?.allowsRotation = false
+        self.physicsBody?.restitution = 0
 
         
         for index in 1...Utlities.NumberOfTexturesPerPlayer{

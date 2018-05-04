@@ -9,15 +9,25 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 class GameViewController: UIViewController {
 
+    var backgroundMusicPlayer = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameplayScene") as? GameplayScene {
+                let bgMusicURL = Bundle.main.url(forResource: "bgMusic", withExtension: "mp3")
+                do{
+                    try backgroundMusicPlayer = AVAudioPlayer(contentsOf: bgMusicURL!)
+                }catch{
+                    print("Couldn't to Load Music")
+                }
+
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 
@@ -25,6 +35,10 @@ class GameViewController: UIViewController {
                 view.presentScene(scene)
             }
             
+            backgroundMusicPlayer.numberOfLoops = -1
+            backgroundMusicPlayer.prepareToPlay()
+            backgroundMusicPlayer.play()
+
             view.ignoresSiblingOrder = true
             view.showsPhysics = true
             view.showsFPS = true
